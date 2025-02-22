@@ -34,12 +34,22 @@ This tutorial outlines the implementation of on-premises Active Directory within
 Part 1: Install Active Directory
 	1.	Log In to DC-1
 Start by logging into the server named DC-1. This is where we’ll set up Active Directory.
+	
 	2.	Install Active Directory Domain Services
 Go to the server settings and install the tool called Active Directory Domain Services (AD DS).
-	3.	Promote DC-1 as a Domain Controller (DC)
+	
+ 3.	Promote DC-1 as a Domain Controller (DC)
 During the setup, create a new “forest” for your domain. Think of a forest as a big network that connects everything together. For example, use the name mydomain.com (or choose your own name—just remember it!).
-	4.	Restart and Log Back In
+	
+ 4.	Restart and Log Back In
 Once DC-1 is set up, restart it and log in again using this format for the username: mydomain.com\labuser.
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
 
 Part 2: Create a Domain Admin User
 	1.	Open Active Directory Users and Computers (ADUC)
