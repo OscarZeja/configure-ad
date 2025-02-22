@@ -32,7 +32,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 Part 1: Install Active Directory
-	1.	Log In to DC-1
+	
+ 1.	Log In to DC-1
 Start by logging into the server named DC-1. This is where we’ll set up Active Directory.
 	
  2.	Install Active Directory Domain Services
