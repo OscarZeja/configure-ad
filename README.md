@@ -53,45 +53,45 @@ Once DC-1 is set up, restart it and log in again using this format for the usern
 
 
 Part 2: Create a Domain Admin User
-	1.	Open Active Directory Users and Computers (ADUC)
+
+1.	Open Active Directory Users and Computers (ADUC)
 This is the tool where you manage users and groups in your domain.
-	2.	Create Organizational Units (OUs)
+	
+2.	Create Organizational Units (OUs)
 OUs are like folders to organize users. Create these two OUs:
 	•	_EMPLOYEES: For general users.
 	•	_ADMINS: For admin users.
-	3.	Add a New Admin User
+	
+3.	Add a New Admin User
 	•	Inside the _ADMINS folder, create a user named Jane Doe with the username jane_admin and password Cyberlab123!.
 	•	Add jane_admin to the Domain Admins group. This gives Jane full admin permissions.
-	4.	Log In as Jane Doe
+	
+4.	Log In as Jane Doe
 Log out of DC-1, then log back in using Jane’s account: mydomain.com\jane_admin. From now on, use this account as your admin user.
 
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+
 Part 3: Join Client-1 to the Domain
-	1.	Set DNS Settings (Already Done)
+	
+1.	Set DNS Settings (Already Done)
 Client-1’s DNS settings should already point to DC-1’s private IP address in the Azure Portal.
-	2.	Restart Client-1 (Already Done)
+	
+2.	Restart Client-1 (Already Done)
 This ensures the settings are applied.
-	3.	Log In to Client-1
+	
+3.	Log In to Client-1
 Use the local admin account (e.g., labuser) and join Client-1 to the domain mydomain.com. Once joined, the computer will restart.
-	4.	Verify in ADUC
+	
+4.	Verify in ADUC
 On DC-1, open ADUC and make sure Client-1 is listed as part of the domain.
-	5.	Organize in an OU
+	
+5.	Organize in an OU
 Create a new OU named _CLIENTS in ADUC and move Client-1 into this folder.
 
 And that’s it! You’ve successfully set up a domain, created an admin account, and connected a client to the domain. Now you’re ready to manage users and devices within your network!</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 <br />
