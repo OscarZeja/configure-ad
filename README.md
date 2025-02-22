@@ -35,7 +35,7 @@ Part 1: Install Active Directory
 	1.	Log In to DC-1
 Start by logging into the server named DC-1. This is where we’ll set up Active Directory.
 	
-	2.	Install Active Directory Domain Services
+ 2.	Install Active Directory Domain Services
 Go to the server settings and install the tool called Active Directory Domain Services (AD DS).
 	
  3.	Promote DC-1 as a Domain Controller (DC)
